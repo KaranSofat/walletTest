@@ -1,0 +1,33 @@
+<div class="jumbotron text-center">
+<div ng-show="params"><p ng-repeat="x in parts">Additional Parameter {{x}} defiend</p></div>
+    <p>Add numbers</p>
+ 
+    First:<input type="number" ng-model="num.n1" ng-change="result()" />
+Second:<input type="number" ng-model="num.n2" ng-change="result()"  />
+third:<input type="number" ng-model="num.n3" ng-change="result()"  />
+Total<input type="number" ng-model="num.n4"  ng-change="result1()" />
+<div style="margin: 26px 0 0">
+    <p>Passing the data between Controllers</p>
+
+    <input type="text" ng-model="data">
+    <input type="button" value = "share" ng-click="shared()">
+</div>
+<div style="margin: 26px 0 0">
+<p>Angular js cursor Focus</p>
+<form name="form">
+    <div class="form-group">
+      <label for="input1">First</label>
+      <input type="text" id="input1" name="input1" tabindex="1" maxlength="5" move-focus placeholder="Input 1">
+    </div>
+    <div class="form-group">
+      <label for="input2">Second</label>
+      <input type="text"  id="input2" name="input2" tabindex="2" maxlength="5" move-focus placeholder="Input 2">
+    </div>
+    <div class="form-group">
+      <label for="input3">Third</label>
+      <input type="text" id="input3" name="input3" tabindex="3" maxlength="5" move-focus placeholder="Input 3">
+    </div>
+  </form>
+
+</div>
+</div>

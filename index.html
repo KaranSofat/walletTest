@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wallet Hub Assignment</title>
+    <!-- CSS (load bootstrap) -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+       <link rel="stylesheet" href="animate/animation.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+       
+    <style>
+        .navbar { border-radius:0; }
+    </style>
+      <script data-main="require-config" src="require.js"></script>
+</head>
+
+<!-- apply our angular app to our site -->
+<body >
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#/walletHub/1/">Wallet Hub Assignment</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a href="#/walletHub/1/">First</a></li>
+        <li><a href="#/walletHub/2/">Second</a></li>
+        <li><a href="#/walletHub/3/">Third</a></li>
+    </ul>
+</nav>
+
+<!-- MAIN CONTENT -->
+<!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+<div class="container view-animate-container" >
+    <div ui-view  class="view-animate"></div>
+</div>
+
+<div class="text-center">
+    <p>Assignment for <a href="https://wallethub.com" target="_blank">walletHub</a></p>
+
+</div>
+
+</body>
+</html>

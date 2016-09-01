@@ -1,0 +1,16 @@
+<div class="jumbotron text-center">
+<div ng-show="params"><p ng-repeat="x in parts">Additional Parameter {{x}} defiend</p></div>
+    <h1>Third</h1>
+    <p>Shared Data:{{lists[0]}}</p>
+<div  style="margin: 26px 0 0">
+<p>Format Phone:</p>
+<input phone-number placeholder="phone number" name='numValue' ng-model="numValue">
+</div>
+<div  style="margin: 26px 0 0">
+<p>Format in dollar</p>
+<div style="position:relative; display: inline-block;">
+<input type="text" ng-model="money" currency-input size="30" placeholder="insert currency value" style="text-indent:18px;"></input>
+<i class="fa fa-usd" aria-hidden="true" style="position:absolute; left:7px; top:6px;"></i>
+</div>
+</div>
+</div>
